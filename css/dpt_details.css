@@ -1,0 +1,133 @@
+
+
+.main-division {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-section {
+    width: 100%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    transition: 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: rgb(187, 187, 187);
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #ffffff;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+
+.fa-caret {
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.card {
+
+    max-width: 13%;
+    width: 13%;
+    /* Ensures the cards don't exceed this width */
+    height: 15.5em;
+    background: #FFB44B;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+
+.card span {
+
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+}
+
+.card .info {
+
+    color: white;
+    display: block;
+    text-align: left;
+    font-size: 0.82em;
+    margin: 3px;
+    margin-left: 30px;
+}
+
+.card .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 50px;
+    margin: auto;
+
+}
+
+.card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card a {
+    color: white;
+    transition: .4s ease-in-out;
+}
+
+.card a:hover {
+    color: white;
+}
+
+.card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #4366A9;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+}
+
+.card button:hover {
+    background: darkblue;
+    color: white;
+    cursor: pointer;
+}

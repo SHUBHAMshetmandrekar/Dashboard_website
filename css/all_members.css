@@ -1,0 +1,83 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top-buttons .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.top-buttons .btn-back {
+    background-color: #4366A9;
+    color: white;
+}
+
+.top-buttons .btn-add {
+    background-color: #28a745;
+    color: white;
+}
+
+.buttons-container {
+    margin-top: 20px;
+}
+
+.buttons-container .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buttons-container .btn-red {
+    background-color: #dc3545;
+    color: white;
+}
+
+.buttons-container .btn-blue {
+    background-color: #007bff;
+    color: white;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table.dataTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table.dataTable thead th {
+    background-color: #4366A9;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+table.dataTable tbody td {
+    padding: 10px;
+    border-bottom: 1px solid;
+    color: #13334C;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #FFB44B;
+}
